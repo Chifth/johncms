@@ -71,10 +71,10 @@ if ($request->getMethod() === 'POST') {
     if (! empty($files) && ! empty($files['screen'])) {
         /** @var GuzzleHttp\Psr7\UploadedFile $screen */
         $screen = $files['screen'] ?? false;
-        $file_name = $dir . '/' . $id . '.png';
-        if (file_exists($file_name)) {
+        /*$file_name = $dir . '/' . $id . '.png';
+        if (file_exists($file_name)) {*/
             $file_name = $dir . '/' . time() . '_' . $id . '.png';
-        }
+        //}
         // Пытаемся обработать файл и сохранить его
         try {
             /** @var ImageManager $image_manager */
