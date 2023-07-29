@@ -13,7 +13,7 @@ services:
     networks:
       - default
   mariadb:
-    image: 'mariadb:10'
+    image: 'mysql:8'
     container_name: mariadb.${APP_NAME:-johncms}
     ports:
       - '${FORWARD_DB_PORT:-}:3306'
