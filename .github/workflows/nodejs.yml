@@ -1,12 +1,8 @@
 name: Node CI
 on:
   push:
-    paths:
-      - '**.js'
-      - '**.css'
-      - '**.scss'
-      - '**.json'
-      - '**.vue'
+    branches:
+      - stage9
 jobs:
   build:
     runs-on: ubuntu-latest
