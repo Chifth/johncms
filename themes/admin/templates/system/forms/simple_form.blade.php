@@ -8,6 +8,10 @@
                 @include('system::forms/input_text', ['field' => $field, 'errors' => $errors])
                 @break
 
+            @case('date')
+                @include('system::forms/input_date', ['field' => $field, 'errors' => $errors])
+                @break
+
             @case('hidden')
                 @include('system::forms/input_hidden', ['field' => $field, 'errors' => $errors])
                 @break
@@ -18,6 +22,10 @@
 
             @case('textarea')
                 @include('system::forms/textarea', ['field' => $field, 'errors' => $errors])
+                @break
+
+            @case('ckeditor')
+                @include('system::forms/ckeditor', ['field' => $field, 'errors' => $errors])
                 @break
 
             @case('captcha')

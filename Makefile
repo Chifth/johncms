@@ -1,6 +1,14 @@
 prepare:
 	cp -R ./system/vendor/maximebf/debugbar/src/DebugBar/Resources/* themes/default/assets/debugbar
 
+SHELL=/bin/bash
+
+CURRENT_UID := $(shell id -u)
+CURRENT_GID := $(shell id -g)
+
+export CURRENT_UID
+export CURRENT_GID
+
 cms-install:
 	composer install
 	npm install
@@ -23,4 +31,4 @@ stop:
 	docker-compose stop
 
 shell:
-	docker exec -it $$(docker ps -q -f name=ubuntu) bash
+	docker exec -it $$(docker ps -q -f name=php-fpm.johncms) sh
