@@ -21,6 +21,8 @@
 /themes/default/assets/js/app.js.map
 
 # Upload folder ignores
+/upload/cache/*
+!/upload/cache/.htaccess
 /upload/downloads/files/*
 !/upload/downloads/files/index.php
 /upload/forum/attach/*
@@ -48,3 +50,8 @@ docker-configs/logs/nginx/access.log
 upload/downloads/screen/*
 upload/guestbook/*
 /upload/tmp/*
+
+# Misc Oldfag stuff
+trash
+.well-known/brave-rewards-verification.txt
+themes/*
