@@ -9,12 +9,16 @@
 /translate.xml
 /system/vendor
 /mix-manifest.json
+/vendor
 
 # Data folder ignores
 /data/cache/*
 !/data/cache/.gitkeep
 /data/logs/*
+/data/debugbar/*
+!/data/debugbar/.gitkeep
 !/data/logs/.gitkeep
+/docker/*
 
 # Themes folder ignores
 /themes/default/assets/css/app.css.map
@@ -50,6 +54,7 @@ docker-configs/logs/nginx/access.log
 upload/downloads/screen/*
 upload/guestbook/*
 /upload/tmp/*
+/public/build/*
 
 # Misc Oldfag stuff
 trash
