@@ -3,7 +3,7 @@ name: Deploy To Server
 on:
   # Deploy on merge to main
   push:
-    branches: [ stage9 ]
+    branches: [ stage95 ]
 #  # Manually deploy branch
 #  workflow_dispatch:
 #    branches: [ main ] sudo chown -Rf www-data:www-data /home/www/html/*
