@@ -42,7 +42,7 @@ if ($total) {
 		AND `cms_mail`.`delete`!='" . $user->id . "'
 		AND `cms_mail`.`sys`='0'
 		AND `cms_contact`.`ban`!='1'
-		GROUP BY `users`.`id`, `users`.`name`, `users`.`rights`, `users`.`lastdate`, `users`.`ip`,
+		GROUP BY `users`.`id`, `users`.`name`, `users`.`rights`, `users`.`lastdate`, `users`.`ip`
 		ORDER BY MAX(`cms_mail`.`time`) DESC
 		LIMIT " . $start . ',' . $user->config->kmess
     );
